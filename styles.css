@@ -4,8 +4,8 @@
 
 /* You can completely change the color scheme! Go to https://uigradients.com for gradient inspiration!! */
 body {
-  background-color: #fd746c;
-  background: linear-gradient(45deg,  #fd746c, #ff9068);
+  background-color: #15C200;
+  background: linear-gradient(45deg,  #15C200, #15C200);
   width: 80%;
   margin: auto;
 }
@@ -19,7 +19,7 @@ h1 {
 
 form {
   margin-bottom: 20px;
-  background-color: #FFDCDA;
+  background-color: #9CFF90;
   margin: auto;
   display: flex;
   padding: 10px;
@@ -57,33 +57,34 @@ p {
 }
 
 .submit-btn {
-  background-color: #fd746c;
+  background-color: #30BC20;
   color: #fff;
   transition: all 0.5s;
   text-transform: uppercase;
-  cursor: pointer;
+  cursor: crosshair;
   padding: 7.5px 35px;
 }
 
 .submit-btn:hover {
-  background-color: #DD665F;
-  cursor: pointer;
+  background-color: #1A6512;
+  cursor: crosshair;
 }
 
 /* The code below sets the data up in a 2x2 square, like the hedgehog page */
 #data-container {
   margin: auto;
-  width: 700px;
+  width: 400px;
   display: grid;
-  grid-template-columns: 350px 350px;
-  grid-template-rows: 350px 350px;
-  grid-template-areas: "image1 image2" "image3 image4";
-  background-color: #EDF4F1;
+  grid-template-columns: 350px;
+  grid-template-rows: 350px 350px 350px 350px 350px 350px;
+  grid-template-areas: "image1" "image2" "image3" "image4" "image5" "image6";
+  background-color: #9CFF90;
   padding: 10px;
   margin-top: 25px;
   margin-bottom: 40px;
+  justify-content: center;
 }
-#image1, #image2, #image3, #image4 {
+#image1, #image2, #image3, #image4, #image5, #image6 {
   width: 350px;
   height: 350px;
   object-fit: cover;
@@ -99,6 +100,14 @@ p {
 }
 #image4 {
   grid-area: image4;
+}
+
+#image5 {
+  grid-area: image5;
+}
+
+#image6 {
+  grid-area: image6;
 }
 
 /* The code below sets the data up in rows. This might be more appropriate for you if you are pulling in words/numbers rather than images. It is commented out right now; if you want rows, you should UNcomment out the following code and COMMENT out the code above this, for the 2x2. */
